@@ -117,7 +117,7 @@ export default function Header(props: HeaderProps) {
       <AppBar component="div" position="static" elevation={0} sx={{ zIndex: 0 }}>
         <Tabs value={value} onChange={handleChange} textColor="inherit">
           {tabdata.map(({ label }) => (
-            <Tab label={label} />
+            <Tab key={label} label={label} />
           ))}
         </Tabs>
       </AppBar>
